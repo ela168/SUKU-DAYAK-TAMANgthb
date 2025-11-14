@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival Suku Dayak Taman</title>
+
+<style> 
+    body { margin: 0; font-family: Arial; background: #fafafa; }
+    header { background: #4b2e0f; color: #fff; text-align: center; padding: 20px; }
+    nav { background: #704214; text-align: center; padding: 10px; }
+    nav a { color: #fff; margin: 0 12px; text-decoration: none; font-weight: bold; cursor: pointer; }
+
+    section { 
+        display: none;
+        background:#fff; 
+        padding:20px; 
+        margin:20px; 
+        border-radius:10px;
+    }
+
+    section.active { display:block; }
+
+    footer { background:#4b2e0f; color:white; text-align:center; padding:20px; margin-top:20px; }
+
+    /* Galeri */
+    .card img { width: 200px; border-radius: 10px; margin: 10px; }
+
+    /* Tabel jadwal */
+    table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+    th, td { border: 1px solid #704214; padding: 10px; text-align: left; }
+    th { background: #4b2e0f; color: white; }
+    tr:nth-child(even) { background: #f9f4ef; }
+
+    /* Komentar */
+    .comment-box { background:#fff; border:1px solid #ccc; padding:20px; border-radius:8px; }
+    .comment-box input, .comment-box textarea {
+        width: 100%; padding:10px; margin-top:8px;
+        border-radius:5px; border:1px solid #888;
+    }
+    .comment-box button {
+        background:#704214; color:#fff; padding:10px 20px;
+        border:none; border-radius:5px; margin-top:10px; cursor:pointer;
+    }
+    .comment-item {
+        background: #f9f4ef; border-left:4px solid #704214;
+        padding:12px; margin-top:10px; border-radius:6px;
+    }
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>Festival Suku Dayak Taman</h1>
+</header>
+
+<nav>
+    <a onclick="showPage('beranda')">Beranda</a>
+    <a onclick="showPage('profil')">Profil</a>
+    <a onclick="showPage('lomba')">Lomba</a>
+    <a onclick="showPage('pendaftaran')">Pendaftaran</a>
+    <a onclick="showPage('pengumuman')">Pengumuman</a>
+    <a onclick="showPage('galeri')">Galeri</a>
+    <a onclick="showPage('jadwal')">Jadwal</a>
+    <a onclick="showPage('kontak')">Kontak</a>
+    <a onclick="showPage('download')">Download</a>
+    <a onclick="showPage('komentar')">Komentar</a>
+</nav>
+
+<!-- ================= HALAMAN BERANDA ================= -->
+<section id="beranda" class="active">
+    <h2>Beranda</h2>
+    <p>Dayak Taman adalah salah satu sub-suku Dayak yang hidup di daerah Kalimantan Barat, khususnya di wilayah Kapuas Hulu, sekitar Sungai Mendalam dan Sungai Kapuas. Masyarakatnya juga dikenal dengan sebutan Urang Taman atau TURI, yang berarti manusia yang hidup dengan tatanan adat dan budaya yang tertib dan teratur.
+
+Suku Dayak Taman berasal dari rumpun Dayak Tamanic/Banuaka, satu rumpun dengan Dayak Embaloh dan Dayak Kalis. Mereka terkenal sebagai masyarakat yang memiliki sistem adat, norma, hukum adat, struktur sosial, dan tradisi budaya yang sangat kuat dan diwariskan secara turun-temurun.</p>
+</section>
+
+<!-- ================= PROFIL ================= -->
+<section id="profil">
+    <h2>Profil & Sejarah Suku Dayak Taman</h2>
+    <p>Dayak Taman (urang Taman) masuk dalam rumpun Dayak Banuaka/Tamanic (sebelumnya bergabung dalam Rumpun Ot Danum) yang juga diikuti Dayak Kalis dan Dayak Embaloh (induk Melayu Embaloh/Embaloh Islam). Dayak Taman juga dikenal dengan nama TURI oleh etnis sekitarnya, yang berarti manusia yang pola hidupnya telah tertata, terpola dengan suatu tradisi dan budaya khas. Hal ini dikarenakan, Orang Taman memiliki struktur, adat istiadat, nilai, norma, religi, hukum adat, seni dan budaya yang sejak dahulu telah tertata dengan baik. Dalam masyarakat Dayak Taman terdapat empat strata sosial, yaitu samagat, pabiring (bisa juga di sebut bala samagat), banua, dan paangkam. Strata sosial ini lebih mirip dengan kasta. Kasta yang paling tinggi yaitu samagat pada masa lampau selalu menjadi pembicaraan orang Taman. Sedangkan, yang rendah adalah paangkam yang lebih mirip dengan budak atau tawanan perang. Taman memiliki keragaman budaya yang sampai saat ini masih dipertahankan, seperti menganyam manik, tikar, membuat Mandau, dan tradisi kesenian seperti menari, bersyair, dan lain-lain. Satu diantara potensi yang mendukung lestarinya budaya pada suku ini ialah budaya yang umumnya sudah punah pada sub-suku Dayak di Kalimantan yaitu pola pemukiman rumah betang panjang. Masyarakat adat Daya' Taman di dalam tatanan kemasyarakatan adat mengenal dan memiliki, lambang dan simbol-simbol sebagai identitas kesukuan, seperti pakaian adat, tambe atau bendera, benda pusaka (gunsi, batu belian, nyabur, tombak, parang, dll), benda kesenian (gantungan, tawak, babandi, galentang, dll)</p>
+</section>
+
+<!-- ================= INFORMASI LOMBA ================= -->
+<section id="lomba">
+    <h2>Informasi Lomba</h2>
+    <h3>1. Tari Dayak</h3>
+    <p>Tari Dayak adalah tarian tradisional suku Dayak...</p>
+
+    <h3>2. Busana Adat Dayak</h3>
+    <p>Busana adat Dayak dikenal dengan hiasan manik-manik, , bulu burung enggang, serta motif ukiran khas suku Dayak. Pakaian pria biasanya berupa rompi dan celana pendek dari kulit kayu atau kain tenun, ditambah mandau (senjata tradisional). Perempuan biasanya mengenakan baju manik dan kain tenun bermotif Dayak. Busana ini mencerminkan identitas dan simbol spiritual masyarakat Dayak.</p>
+
+    <h3>3. Musik Tradisional Dayak</h3>
+    <p>Musik tradisional Dayak menggunakan sape’, gong, gendang, Suling bambu.
+
+Musiknya berirama lembut atau ritmis, tergantung acara, seperti upacara adat, tarian, atau penyambutan tamu. Musik ini mencerminkan keakraban masyarakat Dayak dengan alam dan kepercayaan leluhur.
+</p>
+
+    <h3>4. Kerajinan Tangan Dayak</h3>
+    <p>Anyaman rotan, ukiran kayu, manik-manik, seperti gelang, kalung, dan hiasan baju.
+
+Setiap motif biasanya memiliki makna tersendiri, seperti simbol keberanian, perlindungan, atau penghormatan kepada leluhur.
+</p>
+
+    <h3>5. Lomba Masak Kuliner</h3>
+    <p>Juhu Singkah, Pais ikan, Tempuyak, Kue Wadai, Nasi bambu (lamang). Kegiatan ini bertujuan melestarikan cita rasa kuliner Dayak serta memperkenalkan keanekaragaman masakan tradisional mereka kepada masyarakat luas.
+</p>
+
+    <h3>6. Numbuk Padi</h3>
+    <p>Kegiatan tradisional menumbuk padi dengan lesung dan alu (penumbuk kayu). Biasanya dilakukan secara bersama-sama sebagai bentuk kerja gotong royong. Bunyi ritmis dari alu yang menghentak lesung sering dijadikan pertunjukan seni tersendiri dan memiliki nilai budaya, seperti simbol kebersamaan dan rasa syukur atas panen.</p></p>
+<h3>Syarat Dan Kententuan</h3>
+<h3>1. Usia Peserta</h3>
+
+Minimal 18 tahun dan maksimal 25 tahun pada saat pendaftaran.
+
+Peserta wajib menunjukkan bukti usia melalui identitas resmi.
+
+<h3>2. Mekanisme Pendaftaran</h3>
+
+Pendaftaran dilakukan secara online melalui formulir resmi panitia.
+
+Peserta wajib mengisi data diri dengan lengkap dan benar.
+
+Setelah mendaftar, peserta akan menerima konfirmasi melalui email/WhatsApp.
+
+<h>3. Dokumen yang Harus Dibawa</h3>
+Identitas diri (KTP, Kartu Pelajar, atau SIM).
+
+Bukti konfirmasi pendaftaran.
+
+Jika lomba berkelompok, setiap anggota wajib membawa identitas masing-masing.
+
+<h3>4. Ketentuan Umum</h3>
+
+Peserta harus hadir 30 menit sebelum acara dimulai.
+
+Wajib mematuhi seluruh aturan dan arahan panitia.
+
+Tidak diperkenankan membawa benda tajam (kecuali untuk perlombaan yang memerlukan alat tradisional dan sudah disetujui panitia).
+
+Berpakaian sopan, rapi, dan sesuai tema acara.
+
+Keputusan dewan juri bersifat mutlak dan tidak dapat diganggu gugat.
+
+<H3>5. Etika Peserta</H3>
+
+Menjaga sportivitas, menghormati sesama peserta, dan menjaga nama baik budaya Dayak.
+
+Tidak diperkenankan melakukan tindakan yang menyebabkan keributan atau merusak fasilitas acara.
+
+<h3>6. Hadiah & Sertifikat</h3>
+
+Semua peserta mendapat sertifikat keikutsertaan.
+
+Pemenang akan memperoleh trophy, piagam penghargaan, serta hadiah menarik dari panitia/sponsor.
+
+<h3>Jadwal Perlombaan</h3>
+<style>
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #704214;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #4b2e0f;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f9f4ef;
+}
+
+tr:nth-child(odd) {
+    background: #ffffff;
+}
+</style>
+
+<h2>Jadwal Acara Festival Suku Dayak</h2>
+
+<table>
+    <tr>
+        <th>Hari</th>
+        <th>Waktu</th>
+        <th>Acara</th>
+        <th>Lokasi</th>
+    </tr>
+
+    <tr>
+        <td>Hari 1</td>
+        <td>08.00 – 15.00</td>
+        <td>Pembukaan & Parade Budaya</td>
+        <td>Panggung Utama</td>
+    </tr>
+
+    <tr>
+        <td>Hari 2</td>
+        <td>09.00 – 17.00</td>
+        <td>Lomba Tari Dayak</td>
+        <td>Panggung Seni</td>
+    </tr>
+
+    <tr>
+        <td>Hari 3</td>
+        <td>09.00 – 17.00</td>
+        <td> Busana Adat Dayak</td>
+        <td>Aula Pameran</td>
+    </tr>
+
+    <tr>
+        <td>Hari 4</td>
+        <td>10.00 – 18.00</td>
+        <td>Musik Tradisional Dayak</td>
+        <td>Panggung Utama</td>
+    </tr>
+
+    <tr>
+        <td>Hari 5</td>
+        <td>08.00 – 12.00</td>
+        <td>Kerajinan Tangan</td>
+        <td>Rumah Adat</td>
+    </tr>
+    <tr>
+        <td>Hari 6</td>
+        <td>08.00 – 11.30</td>
+        <td>Lomba Masak Kuliner Khas Dayak</td>
+        <td>Rumah Adat</td>
+    </tr>
+    <tr>
+        <td>Hari 7</td>
+        <td>08.00 – 12.00</td>
+        <td>Numbuk Padi</td>
+        <td>Rumah Adat</td>
+    </tr>
+    <tr>
+        <td>Hari 8</td>
+        <td>12.00 – 13.00</td>
+        <td>Istirahat dan Penjurian</td>
+        <td>Panggung Utama</td>
+    </tr>
+    
+    <tr>
+        <td>Hari 9</td>
+        <td>08.00 – 15.00</td>
+        <td>Persiapan Penutupan dan Pameran</td>
+        <td>Panggung Utama</td>
+    </tr>
+    <tr>
+        <td>Hari 10</td>
+        <td>19.00 – Selesai</td>
+        <td>Acara Penutupan dan Pembagian Hadiah</td>
+        <td>Panggung Utama</td>
+    </tr>
+</table>
+
+
+</section>
+
+<!-- ================= PENDAFTARAN ================= -->
+<section id="pendaftaran">
+    <h2>Pendaftaran Online</h2>
+
+    <input placeholder="Fransiska Ela"><br><br>
+    <input placeholder="089569781009"><br><br>
+
+    <input placeholder="Kridianti Devi"><br><br>
+    <input placeholder="087196786543"><br><br>
+
+    <input placeholder="Katarina Ria"><br><br>
+    <input placeholder="087965678789"><br><br>
+
+    <input placeholder="Tini Senowati"><br><br>
+    <input placeholder="084312345678"><br><br>
+
+    <input placeholder="Tri Yanti S"><br><br>
+    <input placeholder="0881234567823"><br><br>
+
+    <input placeholder="Yustina Nora "><br><br>
+    <input placeholder="087123456789"><br><br>
+</section>
+
+<!-- ================= PENGUMUMAN ================= -->
+<section id="pengumuman">
+    <h2>Pengumuman Hasil Lomba</h2>
+    <p>Pengumuman pemenang lomba budaya Dayak 2025
+        Panitia Festival Budaya Dayak 2025 dengan bangga mengumumkan para pemenang lomba yang telah berlangsung pada tanggal 1–9 Juli 2025. Penilaian dilakukan berdasarkan kreativitas, ketepatan tema, teknik, penampilan, dan nilai budaya pada setiap kategori.
+
+<h3>🏆 1. Lomba Tari Dayak (1 Juli)</h3>
+
+<h3>Juara 1 : ........................................</h3>
+<h3>Juara 2 : ........................................</h3>
+<h3>Juara 3 : ........................................</h3>
+
+<h3>🏆 2. Lomba Busana Adat Dayak (2 Juli)</h3>
+<h3>Juara 1 : ........................................</h3>
+<h3>Juara 2 : ........................................</h3>
+<h3>Juara 3 : ........................................</h3>
+
+<h3>🏆 3. Musik Tradisional Dayak (3 Juli)</h3>
+
+<h3>Juara 1 : ........................................</h3>
+<h3>Juara 1 : ........................................</h3>
+<h3>Juara 3 : ........................................</h3>
+
+<h3>🏆 4. Kerajinan Tangan Dayak (4 Juli)</h3>
+
+<h3>Juara 1 : ........................................</h3>
+<h3>Juara 2 : ........................................</h3>
+<h3>Juara 3 : ........................................</h3>
+
+<h3>🏆 5. Lomba Masak Kuliner Khas Dayak (5 Juli)</h3>
+<h3>Juara 1 : ........................................</h3>
+<h3>Juara 2 : ........................................</h3>
+<h3>Juara 3 : ........................................</h3>
+
+<h3>🏆 6. Lomba Numbuk Padi (6 Juli)</h3>
+
+<h3>Juara 1 : ........................................</h3>
+<h3>Juara 2 : ........................................</h3>
+<h3>Juara 3 : ........................................</h3>
+
+<h3>🎉 Penutup</h3>
+
+Selamat kepada seluruh pemenang!
+Setiap peserta akan menerima sertifikat, sementara para juara berhak mendapatkan trophy, piagam penghargaan, dan hadiah dari panitia.</p>
+</section>
+
+
+    </p>
+</section>
+
+<!-- ================= GALERI ================= -->
+<section id="galeri">
+    <h2>Dokumentasi Perlombaan</h2>
+
+    <div class="card">
+        <img src="Kerajinan Tangan.jpg"><p>Kerajinan Tangan</p>
+    </div>
+    <div class="card">
+        <img src="Numbuk Padi.jpg"><p>Numbuk Padi</p>
+    </div>
+    <div class="card">
+        <img src="Tari Daerah.jpg"><p>Tari Daerah</p>
+    </div>
+    <div class="card">
+        <img src="Busana.jpg"><p>Busana</p>
+    </div>
+    <div class="card">
+        <img src="Musik Daerah.jpg"><p>Musik Daerah</p>
+    </div>
+</section>
+
+<!-- ================= JADWAL ================= -->
+<section id="jadwal">
+    <h2>Jadwal Acara Festival</h2>
+
+    <table>
+        <tr><th>Hari</th><th>Waktu</th><th>Acara</th><th>Lokasi</th></tr>
+        <tr><td>1</td><td>08.00 – 15.00</td><td>Pembukaan & Parade Budaya</td><td>Panggung Utama</td></tr>
+        <tr><td>2</td><td>09.00 – 17.00</td><td>Lomba Tari Dayak</td><td>Panggung Seni</td></tr>
+        <tr><td>3</td><td>09.00 – 17.00</td><td>Busana Adat Dayak</td><td>Aula Pameran</td></tr>
+        <tr><td>4</td><td>10.00 – 18.00</td><td>Musik Tradisional</td><td>Panggung Utama</td></tr>
+        <tr><td>5</td><td>08.00 – 12.00</td><td>Kerajinan Tangan</td><td>Rumah Adat</td></tr>
+        <tr><td>6</td><td>08.00 – 11.30</td><td>Lomba Masak</td><td>Rumah Adat</td></tr>
+        <tr><td>7</td><td>08.00 – 12.00</td><td>Numbuk Padi</td><td>Rumah Adat</td></tr>
+        <tr><td>8</td><td>12.00 – 13.00</td><td>Penjurian</td><td>Panggung Utama</td></tr>
+        <tr><td>9</td><td>08.00 – 15.00</td><td>Persiapan Penutupan</td><td>Panggung Utama</td></tr>
+        <tr><td>10</td><td>19.00 – selesai</td><td>Penutupan Festival</td><td>Panggung Utama</td></tr>
+    </table>
+</section>
+
+<!-- ================= KONTAK ================= -->
+<section id="kontak">
+    <h2>Kontak Panitia</h2>
+
+    <input placeholder="Tini"><br><br>
+    <input placeholder="082127906142"><br><br>
+</section>
+
+<!-- ================= DOWNLOAD DOKUMEN ================= -->
+<section id="download">
+    <h2>Download Dokumen</h2>
+
+    <ul>
+        <li><a href="Syarat Dan Ketentuan Lomba.pdf" download>📑 Download Syarat Dan Kententuan Lomba</a></li>
+    </ul>
+</section>
+
+<!-- ================= KOMENTAR ================= -->
+<section id="komentar">
+    <h2>Komentar / Testimoni Pengunjung</h2>
+
+    <div class="comment-box">
+        <label>Nama</label>
+        <input type="text" id="namaKomentar">
+
+        <label>Komentar</label>
+        <textarea id="isiKomentar" rows="4"></textarea>
+
+        <button onclick="kirimKomentar()">Kirim</button>
+    </div>
+
+    <div id="daftarKomentar"></div>
+</section>
+
+<!-- ================= JAVASCRIPT ================= -->
+<script>
+function showPage(pageId) {
+    let pages = document.querySelectorAll("section");
+    pages.forEach(p => p.classList.remove("active"));
+    document.getElementById(pageId).classList.add("active");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function kirimKomentar() {
+    let nama = document.getElementById("namaKomentar").value;
+    let isi = document.getElementById("isiKomentar").value;
+
+    if (nama.trim() === "" || isi.trim() === "") {
+        alert("Nama dan komentar harus diisi!");
+        return;
+    }
+
+    let div = document.createElement("div");
+    div.className = "comment-item";
+    div.innerHTML = "<b>" + nama + ":</b><br>" + isi;
+
+    document.getElementById("daftarKomentar").prepend(div);
+
+    document.getElementById("namaKomentar").value = "";
+    document.getElementById("isiKomentar").value = "";
+}
+</script>
+
+<footer>
+    © 2025 Festival Suku Dayak Taman
+</footer>
+
+</body>
+</html>
